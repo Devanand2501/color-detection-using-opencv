@@ -4,7 +4,8 @@ import streamlit as st
 
 img_path = r'colorful.jpeg'
 img = cv2.imread(img_path)
-
+b= g= r= x_pos= y_pos= 0
+clicked=False
 def rescaleFrame(frame, scale = 0.75):
     height = int(frame.shape[0] * scale + 0.5)
     width = int(frame.shape[1] * scale)
